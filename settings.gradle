@@ -3,8 +3,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Ecommerce Concept"
 include ':app'
+include ':common_resources'
+include ':network'
+include ':screen_home'
+include ':screen_product_details'
+include ':screen_my_cart'
