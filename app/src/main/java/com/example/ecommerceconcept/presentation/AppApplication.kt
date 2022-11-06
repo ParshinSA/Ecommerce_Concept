@@ -13,8 +13,4 @@ class AppApplication : Application() {
             .build()
     }
 
-    override fun onCreate() {
-        super.onCreate()
-    }
-
 }
