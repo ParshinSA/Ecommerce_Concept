@@ -12,10 +12,11 @@
 
     <!--    Secondary color palette  -->
     <color name="black">#FF000000</color>
+    <color name="darkGray">#8D8D8D</color>c
     <color name="normalGray">#B7B7B7</color>
-    <color name="darkGray">#8D8D8D</color>
     <color name="liteGray">#CCCCCC</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dirtyWhite">#F8F8F8</color>
 
     <!--    Text color  -->
     <color name="textColorDarkBlue">@color/darkBlue</color>
@@ -24,4 +25,9 @@
     <color name="textColorLiteGray">@color/liteGray</color>
     <color name="textColorWhite">@color/white</color>
 
- </resources>
+    <!--    Background  -->
+    <color name="appBgDarkBlue">@color/darkBlue</color>
+    <color name="appBgDirtyWhite">@color/dirtyWhite</color>
+    <color name="rvBgWithe">@color/white</color>
+
+</resources>

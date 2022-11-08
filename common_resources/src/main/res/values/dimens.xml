@@ -12,4 +12,8 @@
     <dimen name="textSize25">25sp</dimen>
     <dimen name="textSize30">30sp</dimen>
 
+    <dimen name="cornerRad10">10dp</dimen>
+    <dimen name="cornerRad20">20dp</dimen>
+    <dimen name="cornerRad30">30dp</dimen>
+
 </resources>

@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class HomeScreenDataDto(
     @SerializedName("home_store")
-    val homeStore: List<ItemHomeStoreDto?>,
+    val homeStore: List<ItemHomeStoreDto?>?,
     @SerializedName("best_seller")
-    val bestSeller: List<ItemHomeStoreDto?>
+    val bestSeller: List<ItemBestSellerDto?>?
 )

@@ -14,5 +14,5 @@ data class ItemHomeStoreDto(
     @SerializedName("picture")
     val picture: String?,
     @SerializedName("is_buy")
-    val isBuy: Boolean
+    val isBuy: Boolean?
 )

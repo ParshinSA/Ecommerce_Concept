@@ -1,14 +1,27 @@
 package com.example.ecommerceconcept.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.common_resources.databinding.ActivityAppBinding
 import com.example.ecommerceconcept.R
+import com.example.screen_home.presentation.HomeFragment
 
 class AppActivity : AppCompatActivity() {
 
+    private var _binding: ActivityAppBinding? = null
+    private val binding get() = checkNotNull(_binding)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app)
+        _binding = ActivityAppBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        startFragment()
+    }
+
+    private fun startFragment() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.activityContainerFragment, HomeFragment.newInstance())
+            .commit()
     }
 
 }
