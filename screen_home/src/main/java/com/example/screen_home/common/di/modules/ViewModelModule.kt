@@ -1,7 +1,7 @@
 package com.example.screen_home.common.di.modules
 
 import androidx.lifecycle.ViewModel
-import com.example.screen_home.presentation.ViewModelHomeFrg
+import com.example.screen_home.presentation.viewmodels.ViewModelHomeFrg
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.ClassKey

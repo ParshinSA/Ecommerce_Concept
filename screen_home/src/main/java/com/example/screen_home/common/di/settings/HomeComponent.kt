@@ -4,7 +4,7 @@ import com.example.screen_home.common.di.modules.DataSourceModule
 import com.example.screen_home.common.di.modules.InteractorModule
 import com.example.screen_home.common.di.modules.RepositoryModule
 import com.example.screen_home.common.di.modules.ViewModelModule
-import com.example.screen_home.presentation.HomeFragment
+import com.example.screen_home.presentation.fragments.HomeFragment
 import dagger.Component
 
 @Component(

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewIconGeoLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_geo_location_orange" />
+
+                <TextView
+                    android:id="@+id/textViewTextCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/textMockCity"
+                    android:textColor="@color/colorTextDarkBlue"
+                    android:textSize="@dimen/textSize15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewArrowDropMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_arrow_bottom_gray" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewFilterMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_filter" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/styleContainerHeaderAndAtHeader">
+
+            <TextView
+                android:id="@+id/textViewSelectCategory"
+                style="@style/styleTextHeader25BoldDarkBlue"
+                android:layout_margin="0dp"
+                android:text="@string/textSelectCategory" />
+
+            <TextView
+                style="@style/styleTextAtHeader"
+                android:text="@string/textViewAll" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSelectCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectCategory"
+            tools:listitem="@layout/item_rv_select_category" />
+
+        <FrameLayout style="@style/styleContainerHeaderAndAtHeader">
+
+            <TextView
+                android:id="@+id/TextViewHotSales"
+                style="@style/styleTextHeader25BoldDarkBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textHotSales" />
+
+            <TextView
+                style="@style/styleTextAtHeader"
+                android:text="@string/textSeeMore" />
+        </FrameLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2HotSales"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_vp_hot_sales"
+            tools:background="@drawable/images" />
+
+        <FrameLayout style="@style/styleContainerHeaderAndAtHeader">
+
+            <TextView
+                android:id="@+id/TextViewBestSeller"
+                style="@style/styleTextHeader25BoldDarkBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textHotBestSeller" />
+
+            <TextView
+                style="@style/styleTextAtHeader"
+                android:text="@string/textSeeMore" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBestSeller"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

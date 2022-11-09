@@ -2,9 +2,9 @@ package com.example.ecommerceconcept.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.common_resources.databinding.ActivityAppBinding
 import com.example.ecommerceconcept.R
-import com.example.screen_home.presentation.HomeFragment
+import com.example.ecommerceconcept.databinding.ActivityAppBinding
+import com.example.screen_home.presentation.fragments.HomeFragment
 
 class AppActivity : AppCompatActivity() {
 

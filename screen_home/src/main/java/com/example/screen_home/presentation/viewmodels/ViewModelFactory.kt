@@ -1,4 +1,4 @@
-package com.example.screen_home.presentation
+package com.example.screen_home.presentation.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

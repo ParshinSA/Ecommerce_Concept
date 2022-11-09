@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textMockCity">Zihuatanejo, Gro</string>
+    <string name="textSelectCategory">Select Category</string>
+    <string name="textViewAll">view all</string>
+    <string name="textSeeMore">see more</string>
+    <string name="textPhones">Phones</string>
+    <string name="textHotSales">Hot sales</string>
+    <string name="textHotBestSeller">Best Seller</string>
+    <string name="textNew">New</string>
+    <string name="textBuyNow"><u>Buy now!</u></string>
+
+</resources>

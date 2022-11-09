@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Bottom navigation menu  -->
+    <color name="itemBottomNavColorWhite">@color/white</color>
+    <color name="bgBottomNavColorDarkBlue">@color/darkBlue</color>
+</resources>

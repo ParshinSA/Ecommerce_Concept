@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textExplore">Explore</string>
+    <string name="textCart">Cart</string>
+    <string name="textFavorite">Favorite</string>
+    <string name="textProfile">Profile</string>
+</resources>

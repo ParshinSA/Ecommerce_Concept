@@ -16,18 +16,28 @@
     <color name="normalGray">#B7B7B7</color>
     <color name="liteGray">#CCCCCC</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dirtyWhite">#F8F8F8</color>
+    <color name="darkLiteWhite">#F8F8F8</color>
 
     <!--    Text color  -->
-    <color name="textColorDarkBlue">@color/darkBlue</color>
-    <color name="textColorOrange">@color/orange</color>
-    <color name="textColorDarkGray">@color/darkGray</color>
-    <color name="textColorLiteGray">@color/liteGray</color>
-    <color name="textColorWhite">@color/white</color>
+    <color name="colorTextDarkBlue">@color/darkBlue</color>
+    <color name="colorTextOrange">@color/orange</color>
+    <color name="colorTextDarkGray">@color/darkGray</color>
+    <color name="colorTextLiteGray">@color/liteGray</color>
+    <color name="colorTextWhite">@color/white</color>
 
     <!--    Background  -->
-    <color name="appBgDarkBlue">@color/darkBlue</color>
-    <color name="appBgDirtyWhite">@color/dirtyWhite</color>
-    <color name="rvBgWithe">@color/white</color>
+    <color name="colorAppBgDarkBlue">@color/darkBlue</color>
+    <color name="colorAppBgLiteDarkWhite">@color/darkLiteWhite</color>
+    <color name="colorRvBgWithe">@color/white</color>
+
+    <!--    Icon color  -->
+    <color name="colorBgIconOrange">@color/orange</color>
+    <color name="colorBgIconWhite">@color/white</color>
+
+    <!--    Button color    -->
+    <color name="colorBgButtonWhite">@color/white</color>
+    <color name="colorBgButtonOrange">@color/orange</color>
+    <color name="colorRippleNormalGray">@color/normalGray</color>
+
 
 </resources>
