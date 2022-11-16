@@ -30,20 +30,20 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
-    implementation project(":common_resources")
+    implementation project(':common')
     implementation project(":network")
-    implementation project(":screen_home")
+    implementation project(":navigation")
+    implementation project(':screen_explore')
     implementation project(":screen_product_details")
     implementation project(":screen_my_cart")
-    implementation project(":api_home_screen")
+    implementation project(':api_explore_screen')
     implementation project(":api_product_details_screen")
     implementation project(":api_my_cart_screen")
+    implementation project(':container_fragment')
+    implementation project(':container_activity')
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -70,5 +70,9 @@ dependencies {
     def rxAndroid_version = "2.1.0"
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
     implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+
+    // Cicerone
+    def cicerone_version = "6.6"
+    implementation "com.github.terrakok:cicerone:$cicerone_version"
 
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textMockCity">Zihuatanejo, Gro</string>
+    <string name="mockTextPrice">$1,047</string>
+    <string name="mockTextDiscountPrice">$1,500</string>
+
+    <string name="textSelectCategory">Select Category</string>
+    <string name="textViewAll">view all</string>
+    <string name="textSeeMore">see more</string>
+    <string name="textHotSales">Hot sales</string>
+    <string name="textHotBestSeller">Best Seller</string>
+    <string name="textNew">New</string>
+    <string name="textBuyNow">Buy now!</string>
+    <string name="textDone">Done</string>
+    <string name="textFilterOptions">Filter options</string>
+    <string name="textBrand">Brand</string>
+    <string name="textPrice">Price</string>
+    <string name="textSize">Size</string>
+    <string name="textSearch">Search</string>
+
+</resources>

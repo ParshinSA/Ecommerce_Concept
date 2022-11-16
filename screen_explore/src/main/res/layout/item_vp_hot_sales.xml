@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewItemHotSales"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="@dimen/cornerRad10">
+
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_item_hot_sales"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <TextView
+        android:id="@+id/textViewIsNew"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_margin="16dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/ic_ellipse_orange"
+        android:gravity="center"
+        android:text="@string/textNew"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize10"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/containerTitle"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="@dimen/textSize25"
+                android:textStyle="bold"
+                tools:text="Iphone 12" />
+
+            <View
+                android:id="@+id/trait"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorTextWhite" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/textSize11"
+            tools:text="Súper. Mega. Rápido." />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/apcButtonBuyNow"
+        android:layout_width="98dp"
+        android:layout_height="23dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_vp_hot_sales"
+        android:gravity="center"
+        android:text="@string/textBuyNow"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize11"
+        android:textStyle="bold" />
+
+</androidx.cardview.widget.CardView>

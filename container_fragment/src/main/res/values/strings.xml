@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textExplore">Explore</string>
+    <string name="itemExplore">itemExplore</string>
+    <string name="itemCart">itemCart</string>
+    <string name="itemFavorite">itemFavorite</string>
+    <string name="itemProfile">itemProfile</string>
+
+
+</resources>

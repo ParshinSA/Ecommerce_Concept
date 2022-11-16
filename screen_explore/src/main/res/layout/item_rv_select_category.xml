@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:background="@drawable/ic_ellipse_orange"
+        tools:src="@drawable/ic_phone_white" />
+
+    <TextView
+        android:id="@+id/textViewTitleSelectCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorTextOrange"
+        android:textSize="@dimen/textSize12"
+        android:textStyle="bold"
+        tools:text="Phones" />
+
+</LinearLayout>

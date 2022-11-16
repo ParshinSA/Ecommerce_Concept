@@ -11,13 +11,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/api_home_screen" />
+            <option value="$PROJECT_DIR$/api_explore_screen" />
             <option value="$PROJECT_DIR$/api_my_cart_screen" />
             <option value="$PROJECT_DIR$/api_product_details_screen" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/common_resources" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/container_activity" />
+            <option value="$PROJECT_DIR$/container_fragment" />
+            <option value="$PROJECT_DIR$/navigation" />
             <option value="$PROJECT_DIR$/network" />
-            <option value="$PROJECT_DIR$/screen_home" />
+            <option value="$PROJECT_DIR$/screen_explore" />
             <option value="$PROJECT_DIR$/screen_my_cart" />
             <option value="$PROJECT_DIR$/screen_product_details" />
           </set>

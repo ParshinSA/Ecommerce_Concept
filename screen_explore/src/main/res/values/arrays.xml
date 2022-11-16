@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayBrand">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Nokia</item>
+        <item>Honor</item>
+        <item>Apple</item>
+    </string-array>
+
+    <string-array name="arrayPrice">
+        <item>$0 - $100</item>
+        <item>$100 - $300</item>
+        <item>$300 - $500</item>
+        <item>$500 - $800</item>
+    </string-array>
+
+    <string-array name="arraySize">
+        <item>3 to 4.5</item>
+        <item>4.5 to 5.5</item>
+        <item>5.5 to 7</item>
+    </string-array>
+</resources>

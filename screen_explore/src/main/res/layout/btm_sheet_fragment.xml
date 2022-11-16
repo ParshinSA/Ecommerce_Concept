@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageButton
+            android:id="@+id/imageBtnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_dark_blue"
+            android:src="@drawable/ic_close_white" />
+
+        <TextView
+            style="@style/styleTextBtmSheetHeader"
+            android:layout_gravity="center"
+            android:text="@string/textFilterOptions" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center_vertical|end"
+            android:background="@drawable/bg_btn_done"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/textDone"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/textSize18" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/styleTextBtmSheetHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textBrand" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menuBrandContainer"
+            style="@style/styleFieldFilterBtmSheet">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTvBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/styleTextBtmSheetHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textPrice" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menuPriceContainer"
+            style="@style/styleFieldFilterBtmSheet">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                app:simpleItems="@array/arraySize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/styleTextBtmSheetHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textSize" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menuSizeContainer"
+            style="@style/styleFieldFilterBtmSheet">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTvSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                app:simpleItems="@array/arraySize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

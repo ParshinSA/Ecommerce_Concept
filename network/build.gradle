@@ -35,7 +35,7 @@ android {
 dependencies {
     implementation project(":api_product_details_screen")
     implementation project(":api_my_cart_screen")
-    implementation project(":api_home_screen")
+    implementation project(':api_explore_screen')
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

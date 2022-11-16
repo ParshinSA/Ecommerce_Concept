@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBgLiteDarkWhite"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayoutBottomNavMenu" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBottomNavMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_tab_menu"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:tabGravity="center"
+        app:tabIconTint="@color/itemBottomNavColorWhite"
+        app:tabIndicatorColor="@color/bgBottomNavColorDarkBlue"
+        app:tabRippleColor="@color/bgBottomNavColorDarkBlue">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout="@layout/item_tab_explorer"
+            android:text="@string/itemExplore" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout="@layout/item_tab_cart"
+            android:text="@string/itemCart" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/item_tab_favorite"
+            android:text="@string/itemFavorite" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/item_tab_profile"
+            android:text="@string/itemProfile" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>
